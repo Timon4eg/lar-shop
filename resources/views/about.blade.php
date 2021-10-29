@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Главная')
+@section('title', 'О нас')
 
 @section('top')
 	@include('layouts.top')
