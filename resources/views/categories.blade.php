@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Категория' . $category->name)
+@section('title', 'Категории')
 
 @section('top')
 	@include('layouts.top')
@@ -13,8 +13,7 @@
 	<div class="row">
 
 		<div class="col-lg-3">
-			<h1 class="h2 pb-4"><b>{{ $category->name }} category</b></h1>
-			<p>{{ $category->description }}</p>
+			<h1 class="h2 pb-4"><b>Categories</b></h1>
 			<ul class="list-unstyled templatemo-accordion">
 				<li class="pb-3">
 					<a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
@@ -25,8 +24,8 @@
 
                         @foreach ($categories as $category)
 						    <li><a class="text-decoration-none" href="/{{ $category->code }}">{{ $category->name }}</a></li>
-
                         @endforeach
+
 					</ul>
 				</li>
 				<li class="pb-3">
