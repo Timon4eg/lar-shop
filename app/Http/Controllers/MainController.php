@@ -17,4 +17,8 @@ class MainController extends Controller
     public function contact() {
         return view('contact');
     }
+
+    public function category($category) {
+        return view('category', compact('category'));
+    }
 }
