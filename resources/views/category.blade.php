@@ -25,7 +25,6 @@
 
                         @foreach ($categories as $category)
 						    <li><a class="text-decoration-none" href="/{{ $category->code }}">{{ $category->name }}</a></li>
-
                         @endforeach
 					</ul>
 				</li>
