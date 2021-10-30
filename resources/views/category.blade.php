@@ -13,7 +13,8 @@
 	<div class="row">
 
 		<div class="col-lg-3">
-			<h1 class="h2 pb-4">Categories</h1>
+			<h1 class="h2 pb-4"><b>{{ $category->name }} category</b></h1>
+			<p>{{ $category->description }}</p>
 			<ul class="list-unstyled templatemo-accordion">
 				<li class="pb-3">
 					<a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
