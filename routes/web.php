@@ -10,7 +10,7 @@ Route::get('basket', [MainController::class, 'basket'])->name('basket');
 
 Route::get('/categories', [MainController::class, 'categories'])->name('categories');
 Route::get('/{category}', [MainController::class, 'category'])->name('category');
-// Route::get('/{category}/{product?}', [MainController::class, 'product'])->name('product');
+Route::get('/{category}/{product?}', [MainController::class, 'product'])->name('product');
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
