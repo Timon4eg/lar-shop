@@ -13,8 +13,9 @@
         </div>
         <div class="card-body">
             <a href="shop-single.html" class="h3 text-decoration-none"><b>{{ $product->name }}</b></a>
+            <p class="category-in-card"><i>Категория {{ $product->category->name }}</i></p>
             <p>{{ $product->description }}</p>
-            <p class="text-center mb-0">{{ $product->price }} $</p>
+            <p class="text-center mb-0"><b>{{ $product->price }} $</b></p>
         </div>
     </div>
 </div>

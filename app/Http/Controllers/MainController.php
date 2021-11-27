@@ -35,4 +35,8 @@ class MainController extends Controller
             'products' => $products
         ]);
     }
+
+    public function product($category, $product = null) {
+        return view('product', ['product' => $product]);
+    }
 }
