@@ -13,11 +13,11 @@
 	<div class="row">
 
 		<div class="col-lg-3">
-			<h1 class="h2 pb-4"><b>Categories</b></h1>
+			<h1 class="h2 pb-4"><b>Все товары</b></h1>
 			<ul class="list-unstyled templatemo-accordion">
 				<li class="pb-3">
 					<a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-						Gender
+						Категории
 						<i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
 					</a>
 					<ul class="collapse show list-unstyled pl-3">
@@ -76,11 +76,15 @@
 					</div>
 				</div>
 			</div>
+
+			{{-- Вывод товаров --}}
 			<div class="row">
 			@foreach($products as $product)
 				@include('card', ['product' => $product])
 			@endforeach
 			</div>
+			{{-- Конец вывода товаров --}}
+
 			<div div="row">
 				<ul class="pagination pagination-lg justify-content-end">
 					<li class="page-item disabled">
